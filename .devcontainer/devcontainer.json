@@ -1,0 +1,28 @@
+{
+  "name": "Latex Thesis Builder",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "james-yu.latex-workshop",
+        "ms-vscode.cpptools",
+        "ms-azuretools.vscode-docker",
+        "yzhang.markdown-all-in-one"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+      }
+    }
+  },
+  "remoteUser": "root",
+  "workspaceFolder": "/diploma-bachelor",
+  "mounts": [
+    "source=${localWorkspaceFolder}/fonts,target=/usr/share/fonts/pts,type=bind,consistency=cached"
+  ],
+  "postCreateCommand": "fc-cache -f -v"
+}

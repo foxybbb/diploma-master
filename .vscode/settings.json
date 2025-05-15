@@ -1,0 +1,68 @@
+{
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "editor.cursorBlinking": "solid",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
+    "telemetry.enableTelemetry": false,
+    "latex-workshop.latex.tools": [
+        {
+        "name": "lualatex",
+        "command": "lualatex",
+        "args": [
+            "-shell-escape", //I can't remember why I needed this in the past 
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-output-directory=%OUTDIR%",           
+            "%DOC%"
+        ],
+        "env": {}
+        },
+    
+        {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-output-directory=%OUTDIR%",
+            "%DOC%"
+        ],
+        "env": {}
+        },
+    
+        {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+            "%DOCFILE%"
+        ],
+        "env": {}
+        }
+    ],        
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lualatex",
+            "tools": [
+                "lualatex"
+            ]
+        },
+    
+        {
+            "name": "lualatex -> bibtex -> lualatex TWICE",
+            "tools": [
+                "lualatex",
+                "bibtex",
+                "lualatex"
+                
+            ]
+        }        
+    ],
+    "commentTranslate.source": "Google",
+    "commentTranslate.targetLanguage": "en",
+    "commentTranslate.multiLineMerge": true,
+
+
+
+}

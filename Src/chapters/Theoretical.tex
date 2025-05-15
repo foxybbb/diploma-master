@@ -1,0 +1,89 @@
+This section provides an overview of key mathematical tools that form the foundation of this thesis. It also establishes the notation and references for further exploration of the topic. The discussion begins with the concept of state estimation, focusing on two widely adopted state estimation methods in the field: the Kalman Filter and the Extended Kalman Filter. These techniques are introduced to highlight their significance and practical applications within the context of the research.
+\subsubsection{Linear State estimation}
+
+Dynamic systems are commonly represented in the time domain using state vectors, which encapsulate the internal state of a system at a given time \( t \). The state vector at the current time step, \( \mathbf{x}_t \), can be computed based on the previous state vector \( \mathbf{x}_{t-1} \), and optionally, a system input \( \mathbf{u}_t \). 
+This relationship is expressed as:
+
+\[
+\mathbf{x}_t = \mathbf{A} \mathbf{x}_{t-1} + \mathbf{B} \mathbf{u}_t,
+\]
+
+
+where \( \mathbf{A} \), \( \mathbf{B} \), and \( \mathbf{C} \) are matrices that define the system dynamics, input influence, and output behavior, respectively. Additionally, the system output or measurement vector \( \mathbf{y}_t \) is derived from the current state as:
+
+\[
+\mathbf{x}_t = \mathbf{A} \mathbf{x}_{t-1} + \mathbf{B} \mathbf{u}_t,
+\]
+
+These matrices,\( \mathbf{A} \), \( \mathbf{B} \), and \( \mathbf{C} \) represent the linear behavior of the system, modeling its evolution, control input effects, and observable outputs, respectively \citep{welch2006kalman}.
+
+In practical scenarios, it is rarely feasible to directly measure the true state variables of a system. This limitation arises due to noise, unobservable components, or inaccuracies in the model. To address this, uncertainties are typically represented using random variables, allowing probabilistic methods to quantify and manage such uncertainties. Continuous random variables, particularly in robotics, are often assumed to follow a normal (Gaussian) distribution. These distributions are characterized by their mean (expected value) \( \mu_t = \mathbf{x}_t \) and variance. When dealing with multiple state variables, covariance matrices \( \Sigma \) are used to represent the variances of individual variables as well as the covariances between them \citep{thrun2000probabilistic}.
+
+The propagation of expected values follows deterministic rules defined by the system equations. Variance propagation, however, adheres to the error propagation laws \citep{siegwart2004robots}, incorporating additional noise \( \mathbf{R}_t \) from the system input. This results in the following relationship for covariance propagation:
+
+\[
+\Sigma_t = \mathbf{A} \Sigma_{t-1} \mathbf{A}^T + \mathbf{R}_t.
+\]
+
+The primary objective of state estimation techniques is to accurately approximate the state vector \( \mathbf{x}_t \) and provide reliable estimates of the associated uncertainties (variances) for each time step. These estimates are vital for analyzing and controlling dynamic systems effectively.
+
+\subsubsection{Linear Kalman Filter} 
+
+
+The Kalman filter is a widely used tool for processing noisy measurement data and predicting the state of a system based on input observations. Specifically, it is designed for continuous systems and, as noted in \citep{thrun2000probabilistic}, “is not applicable to discrete or hybrid state spaces.” The filter is particularly advantageous in real-time applications due to its recursive structure and computational efficiency \citep{welch2006kalman}. The Kalman filter consists of two primary steps: the prediction step and the update step. 
+
+The \textit{prediction step} advances the current state estimate and covariance matrix to the next time step, using the equations of the system's dynamic model. 
+The \textit{update step}, on the other hand, refines these estimates by incorporating the actual measurements and comparing them with the predicted output. The discrepancy between the predicted and observed outputs is adjusted using the Kalman Gain \( \mathbf{K}_t \), which is derived from the covariance of the prior state \( \Sigma_{t-1} \), process noise \( \mathbf{R}_t \), and measurement noise \( \mathbf{Q}_t \).
+
+The linear Kalman filter assumes linear system dynamics, unimodal Gaussian state distributions, and uncorrelated, zero-mean noise \citep{welch2006kalman}. Starting from the initial state \( \mathbf{x}_0 \) and covariance matrix \( \Sigma_0 \), the filter recursively updates the current state \( \mathbf{x}_t \) and covariance \( \Sigma_t \) based on the input data \( \mathbf{u}_t \), measurement \( \mathbf{y}_t \), and noise covariances \( \mathbf{R}_t \) and \( \mathbf{Q}_t \). The recursive algorithm is detailed in Algorithm~\ref{alg:kalman_filter}.
+
+
+The filter's behavior is significantly influenced by the selection of process noise \( \mathbf{R}_t \) and measurement noise \( \mathbf{Q}_t \). Lower measurement noise covariance values \( \mathbf{Q}_t \) lead to greater reliance on measurements, resulting in faster adaptation to changes in system output. Conversely, smaller process noise \( \mathbf{R}_t \) indicates higher trust in the system model, promoting smoother results \citep{balzer2018kalman}. Both covariances can be determined either statically or dynamically. The static approach typically involves pre-measuring the measurement noise covariance, while process noise is more challenging to estimate and often requires fine-tuning \citep{welch2006kalman}. Advanced methods can dynamically adjust these covariances using adaptive techniques, such as leveraging prior filter estimates \citep{welch2006kalman}.
+
+
+\subsubsection{Non-Linear State estimation}
+
+Real-world systems include non-linear terms that cannot be transformed into a linear form. These systems are generally represented by the following equations:
+\[
+\mathbf{x}_t = g(\mathbf{u}_t, \mathbf{x}_{t-1}), \tag{2.9}
+\]
+\[
+\mathbf{y}_t = h(\mathbf{x}_t). \tag{2.10}
+\]
+
+Here, the non-linear functions \( g \) and \( h \) replace the linear matrices \( \mathbf{A} \), \( \mathbf{B} \), and \( \mathbf{C} \), modeling the system dynamics and output behavior, respectively. To handle these non-linearities, the functions \( g \) and \( h \) can be approximated at each time step using a first-order Taylor expansion. This results in the computation of the Jacobian matrices \( \mathbf{G}_t \) and \( \mathbf{H}_t \), which correspond to a linear tangent at the non-linear functions, calculated as the partial derivatives (gradients) at the current state value \citep{thrun2000probabilistic}:
+
+\[
+\mathbf{G}_t = \frac{\partial g(\mathbf{u}_t, \mathbf{x}_{t-1})}{\partial \mathbf{x}_{t-1}}, \tag{2.11}
+\]
+\[
+\mathbf{H}_t = \frac{\partial h(\mathbf{x}_t)}{\partial \mathbf{x}_t}. \tag{2.12}
+\]
+
+As with linear systems, the process is subject to perturbations from system noise and measurement noise, represented by the random variables \( \mathbf{w}_t \) and \( \mathbf{v}_t \), respectively. The random influences of \( \mathbf{w}_t \) and \( \mathbf{v}_t \) can also be approximated using Jacobian matrices \citep{welch2006kalman}:
+
+\[
+\mathbf{W}_t = \frac{\partial g(\mathbf{u}_t, \mathbf{x}_{t-1})}{\partial \mathbf{w}_t}, \tag{2.13}
+\]
+\[
+\mathbf{V}_t = \frac{\partial h(\mathbf{x}_t)}{\partial \mathbf{v}_t}. \tag{2.14}
+\]
+
+Unfortunately, most non-linear functions disrupt the Gaussian property of the state distribution. To preserve this critical characteristic, an approximation of the system function \( g \) is used by employing the Jacobian matrices \( \mathbf{G}_t \) and \( \mathbf{W}_t \) for error propagation \citep{welch2006kalman}:
+
+\[
+\Sigma_t = \mathbf{G}_t \Sigma_{t-1} \mathbf{G}_t^T + \mathbf{W}_t \mathbf{R}_t \mathbf{W}_t^T. \tag{2.15}
+\]
+
+This approach enables the handling of non-linear systems while maintaining the Gaussian assumption, which is essential for the performance and stability of state estimation methods.
+
+\subsubsection{Extended Kalman Filter}
+
+
+The Extended Kalman Filter (EKF) generalizes the concept of the linear Kalman Filter to handle non-linear systems. It utilizes the approach presented in Eq.~(2.15), where error propagation is approximated using Jacobian matrices to preserve the Gaussian property of the state distribution. The EKF algorithm (Algorithm~\ref{alg:ekf}) closely resembles its linear counterpart (Algorithm~\ref{alg:kalman_filter}).
+
+
+
+The selection of process noise covariance \( \mathbf{R}_t \) and measurement noise covariance \( \mathbf{Q}_t \) in the EKF is analogous to the linear Kalman Filter. Like its linear counterpart, the EKF assumes a Gaussian distribution with zero-mean, uncorrelated noise. Despite these assumptions, it has been successfully applied to numerous state estimation problems that violate these underlying conditions \citep{thrun2000probabilistic}.
+
+While the EKF is a widely used state estimator in robotics, it is important to acknowledge its limitations. The accuracy of the filter depends heavily on the quality of the linearization, which may become poor for systems with highly non-linear or multi-modal functions \citep{thrun2000probabilistic}. This can lead to suboptimal performance in such scenarios, highlighting the importance of understanding the system dynamics before relying on the EKF.

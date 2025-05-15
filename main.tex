@@ -1,0 +1,35 @@
+\documentclass[12pt, fleqn, a4paper]{article}
+\input{Src/config.tex}
+
+
+ 
+
+% % Не редактируем: используемые пакеты
+\input{Src/settings/packages.tex}
+
+% % % Не редактируем: параметры используемых пакетов и не только
+\input{Src/settings/preferences.tex}
+
+\bibliographystyle{plainnat}
+
+\begin{document}
+ 
+
+
+% \includepdf{Titul.pdf}
+
+\setcounter{page}{5}
+% % % Не редактируем: Титульная страница (формируется автоматически из заданной конфигурации)
+\include{Src/templates/tocpage.tex}
+
+% % Редактируем: всё остальное: вступление, др. этапы, заключение, приложение
+ \include{Src/content}
+
+% % % Не редактируем: Страница библиографии (формируется автоматически из книжек, указанных в refs.bib и пометок \cite{имя_источника} в тексте)
+\include{Src/templates/bibpage.tex}
+
+\bibliography{Src/refs}
+
+% \include{Src/chapters/Appendix}
+
+\end{document}

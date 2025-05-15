@@ -1,0 +1,90 @@
+% настройка кодировки, шрифтов и русского языка
+\usepackage{fontspec}
+
+\usepackage{colortbl}
+\usepackage{varwidth}
+% рабочие ссылки в документе
+\usepackage{hyperref}
+%построения верхних и нижних колонтитулов
+\usepackage{fancyhdr}
+\usepackage{adjustbox}
+%интервал между строками
+\usepackage{setspace}
+% греческие буквы
+\usepackage{textgreek}
+
+\usepackage{datatool}
+% графика
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{snakes}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes}
+\usetikzlibrary{backgrounds}
+% % качественные листинги кода
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{lstfiracode}
+
+% отключение копирования номеров строк из листинга, работает не во всех просмотрщиках (в Adobe Reader работает)
+\usepackage{accsupp}
+\newcommand\emptyaccsupp[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+\let\theHFancyVerbLine\theFancyVerbLine
+\def\theFancyVerbLine{\rmfamily\tiny\emptyaccsupp{\arabic{FancyVerbLine}}}
+
+
+% \bibliographystyle{templates/gost-numeric.bbx}
+% \usepackage{csquotes}
+% \usepackage[parentracker=true,backend=biber,hyperref=true,bibencoding=utf8,style=numeric-comp,language=auto,autolang=other,citestyle=gost-numeric,defernumbers=true,bibstyle=gost-numeric,sorting=ntvy]{biblatex}
+
+
+% установка полей
+\usepackage{geometry}
+% нумерация картинок по секциям
+\usepackage{chngcntr}
+
+% дополнительные команды для таблиц
+\usepackage{booktabs}
+
+% для заголовков
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage[dotinlabels]{titletoc}
+\usepackage{indentfirst}
+% разное для математики
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+
+\usepackage{luacode}
+\usepackage{pdfpages}
+
+\usepackage{amsmath}
+\usepackage{polyglossia}
+\usepackage{changepage}
+\usepackage[fontsize=12pt]{scrextend}
+\usepackage{markdown}
+% \usepackage{etoolbox}
+%\usepackage{hyperref,url}
+\usepackage{natbib}
+
+
+\usepackage[toc,page]{appendix}
+\usepackage{fancyvrb}
+\usepackage[framemethod=tikz]{mdframed}
+% % % водяной знак на документе, см. main.tex
+% % \usepackage[printwatermark]{xwatermark}
+
+% пакеты для создания рамок 
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage{color}
+\usepackage{tabularray}
+\usepackage{natbib}
+\usepackage{svg}
+
+\usepackage{tabularray}
+\usepackage{pgfplots}
+\pgfplotsset{width=12cm,compat=1.9}
+\usepackage{amsmath}
+\usepackage{nccmath}
+\usepackage{ragged2e}
+\justifying
