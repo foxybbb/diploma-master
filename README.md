@@ -1,39 +1,85 @@
-Дипломная работа бакалавра в LaTeX, оформленная в соответствии с требованиями Институт транспорта и связи.
+# Master's Thesis in LaTeX
 
-# Структура
+This repository contains a LaTeX template for a master's thesis, formatted according to the requirements of the Transport and Telecommunications Institute.
+
+## 📁 Project Structure
 
 ```
 .
-├── .devcontainer
-├── .git
-├── .vscode
-├── Src
-    ├── extra
-    ├── images
-    ├── settings
-    └── templates
-
+├── .devcontainer/     # Development container configuration
+├── .git/             # Git repository data
+├── .vscode/          # VS Code settings
+├── Src/              # Source files
+│   ├── extra/        # Additional resources
+│   ├── images/       # Image assets
+│   ├── settings/     # LaTeX configuration files
+│   └── templates/    # Document templates
+└── main.tex          # Main document file
 ```
 
+## 🛠️ Building the Project
 
-Каталог `.devcontainer/`
+### Prerequisites
+- LaTeX distribution (TeX Live or MiKTeX)
+- Make utility
+- Git
 
-Каталог `.git/`
+### Compilation
+To compile the project using Makefile:
+```bash
+git clone https://github.com/foxybbb/diploma-master.git
+cd diploma-master
+make
+```
 
-Каталог `Src/extra`
+### Cleaning Build Files
+To clean build files (except PDF):
+```bash
+make clean
+```
 
-Каталог `Src/images`
+## 📝 Document Structure
 
-Каталог `Src/settings`
+The thesis is organized into several sections:
+- Introduction
+- Theoretical Background
+- Research Methodology
+- Results and Discussion
+- Conclusion
+- References
+- Appendices
 
-Каталог `Src/templates`
+## 🔧 Configuration
+
+The project uses several LaTeX packages and configurations:
+- `fontspec` for font management
+- `natbib` for bibliography
+- `hyperref` for hyperlinks
+- `graphicx` for image handling
+- And more...
+
+## 📚 Bibliography
+
+References are managed using BibTeX with the `plainnat` style. The bibliography file is located at `Src/refs.bib`.
+
+## 🤝 Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+Special thanks to all contributors and the LaTeX community for their support and resources.
 
 ## Работа с LaTeX
 
 Пример компиляции проекта с помощью Makefile:
 ```shell
-git clone https://github.com/foxybbb/diploma-bachelor.git
-cd diploma-bachelor
+git clone https://github.com/foxybbb/diploma-master.git
+cd diploma-master
 make
 ```
 
