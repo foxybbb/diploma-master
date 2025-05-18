@@ -1,0 +1,85 @@
+% State of the Art Chapter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Range Sensing Technologies}
+
+
+
+
+\paragraph{Autonomous vehicles:} In the automotive industry, millimeter Wave radars have been incorporated for decades – they act as the vehicle’s “distant eyes” for advanced driver assistance systems (ADAS). A classic example - cruise control with radar: the front-mounted radar continuously measures the distance and speed of vehicles ahead, allowing the system to automatically adjust speed and maintain a safe distance. Radars are also employed for emergency braking in the event of obstacles, monitoring “blind spots”. For instance, Tesla (until 2021), combined a front-facing ~77 GHz radar with cameras, while many other manufacturers have added multiple radars around the vehicle for a comprehensive view. 
+\paragraph{For research purposes:} the \textbf{Oxford RobotCar} project at Oxford University has garnered significant attention – a 2D laser (lidar) and a specialized 76 GHz frequency-modulated continuous wave (FMCW) radar (\textbf{Navtech CTS350-X scanning system}) have been installed on an unmanned standard vehicle.\citep{Barnes2020RadarRobotCar}
+This radar system rotated 360 degrees, similar to a lidar system, and provided a radar image of the surroundings with a resolution of approximately \textbf{0.9 degrees} at a distance of \textbf{163 meters}   .
+As a result, also a large dataset was collected for the \textbf{Oxford Radar Robot Car}. All sensors (camera, lidar, radar, and odometry) were recorded simultaneously as the vehicle traveled around the city.
+This experiment confirmed that radar is suitable for large-scale urban mapping and navigation and remains operational even in challenging conditions such as rain, nighttime, and difficult lighting. Subsequently, several studies have been conducted using this data to develop algorithms for localization and obstacle avoidance based on radar images.
+\paragraph{Other platforms:} Millimeter wave radars are of interest for various applications, including unmanned aerial vehicles (UAVs), robotic manipulators, and humanoid systems. For instance, in the case of flying UAVs, radars can provide a stable measurement of height above the ground and the detection of obstacles, such as smoke or dust, which is relevant for fire reconnaissance missions. In the \textbf{DARPA Subterranean Challenge} event, some teams have experimented with radar technology to navigate through smoke-filled tunnels, where lidar sensors may not be effective. \citep{10461097}
+In humanoid robots, radars can help detect the presence and movement of people or objects that may be outside the range of camera vision. Texas Instruments has demonstrated a prototype that uses a radar system located in the chest of the robot to detect the presence of a person and their movement, allowing the robot to react accordingly, even in worse light conditions.\citep{TI_SWRA831_2024}
+\paragraph{In industrial robotics:} automated guided vehicles (AGVs) in factories and warehouse robots, radars are implemented to enhance safety. For instance, 60-64 GHz radar systems monitor the area surrounding a forklift truck, detecting people or other machinery and stopping the robot if a path is blocked.\citep{TI_RadarToolbox_Latest}
+This technology can be applied across a wide range of platforms, from small household robots to vehicles, depending on their unique sensing capabilities.
+
+
+
+
+
+
+
+% Наконец, стоимость: камеры и ультразвук самые дешёвые, лидары самые дорогие, радары занимают промежуточное положение. Однако за счёт интеграции в CMOS ожидается, что радарные сенсоры станут ещё дешевле при массовом производстве
+% ti.com
+% . Например, 60–77 ГГц радарный чип от TI включает и антенны, и DSP, и стоит порядка $20–$50 (оценочно) при большом тираже – сопоставимо с простым 2D-лидаром, но при этом даёт дополнительную функциональность (скорость, всепогодность). Лидары тоже дешевеют (некоторые твердотельные модели на 2025 год продаются по $500–$1000), но до цен радаров им ещё далеко. Таким образом, радар – привлекательный экономически компромисс: он может во многих задачах заменить дорогой лидар (особенно там, где не нужна миллиметровая детализация), улучшая при этом надёжность системы.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Lidar}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Optical Sensors}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Radar Sensors}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Acoustic Sensors}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Motion Planning}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Pathfinding}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motion Planning}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{SLAM}
+
+
+
+
+\subsection{Synthesis and Research Gaps }
+
+
+
+

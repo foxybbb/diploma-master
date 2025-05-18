@@ -1,0 +1,99 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[rad(1943)]{radio1943detection}
+Radio detection and ranging.
+\newblock \emph{Nature}, 152\penalty0 (3857):\penalty0 391--392, 1943.
+
+\bibitem[Ankerst et~al.(1999)Ankerst, Breunig, Kriegel, and Sander]{ankerst1999optics}
+M.~Ankerst, M.~M. Breunig, H.-P. Kriegel, and J.~Sander.
+\newblock Optics: Ordering points to identify the clustering structure.
+\newblock \emph{ACM SIGMOD Record}, 28\penalty0 (2):\penalty0 49--60, 1999.
+
+\bibitem[Aqara(2023)]{Aqara_Presence_Sensor_FP2}
+Aqara.
+\newblock Presence sensor fp2.
+\newblock \url{https://www.aqara.com/us/product/presence-sensor-fp2/?utm_source=chatgpt.com}, 2023.
+\newblock Accessed: 2025-05-18.
+
+\bibitem[Barnes et~al.(2020)Barnes, Gadd, Murcutt, Newman, and Posner]{Barnes2020RadarRobotCar}
+Dan Barnes, Matthew Gadd, Paul Murcutt, Paul Newman, and Ingmar Posner.
+\newblock The oxford radar robotcar dataset: {A} radar extension to the oxford robotcar dataset.
+\newblock In \emph{Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)}, 2020.
+
+\bibitem[Finn(1968)]{finn1968adaptive}
+H.~Finn.
+\newblock Adaptive detection mode with threshold control as a function of spatially sampled clutter-level estimates.
+\newblock \emph{RCA Review}, 29:\penalty0 414--465, 1968.
+
+\bibitem[Harlow et~al.(2024)Harlow, Jang, Barfoot, Kim, and Heckman]{harlow2021mmwave}
+Kyle Harlow, Hyesu Jang, Timothy~D. Barfoot, Ayoung Kim, and Christoffer Heckman.
+\newblock A new wave in robotics: Survey on recent mmwave radar applications in robotics.
+\newblock \emph{arXiv}, cs.RO, 2024.
+\newblock URL \url{https://arxiv.org/abs/2305.01135v3}.
+\newblock License: arXiv.org perpetual non-exclusive license, January 2024.
+
+\bibitem[Jin and Yang(2019)]{Jin2019}
+Dingfei Jin and Yue Yang.
+\newblock Using distortion correction to improve the precision of camera calibration.
+\newblock \emph{Optical Review}, 26\penalty0 (2):\penalty0 269--277, 2019.
+\newblock \doi{10.1007/s10043-019-00496-5}.
+\newblock URL \url{https://doi.org/10.1007/s10043-019-00496-5}.
+
+\bibitem[Mondada et~al.(2003)Mondada, Guignard, Bonani, and Magnenat]{turn0search0}
+F.~Mondada, A.~Guignard, M.~Bonani, and S.~Magnenat.
+\newblock Autonomous mobile robot: Guidelines for a simple architecture.
+\newblock In \emph{Proceedings of the International Conference on Intelligent Robots and Systems}, pages 1626--1631. IEEE, 2003.
+
+\bibitem[Nitzberg(1972)]{nitzberg1972cfar}
+R.~Nitzberg.
+\newblock Constant-false-alarm-rate signal processors for several types of interference.
+\newblock \emph{IEEE Transactions on Aerospace and Electronic Systems}, \penalty0 (1):\penalty0 27--34, 1972.
+
+\bibitem[Shen et~al.(2024)Shen, Nunez-Yanez, and Dahnoun]{s24113660}
+Zichao Shen, Jose Nunez-Yanez, and Naim Dahnoun.
+\newblock Advanced millimeter-wave radar system for real-time multiple-human tracking and fall detection.
+\newblock \emph{Sensors}, 24\penalty0 (11), 2024.
+\newblock ISSN 1424-8220.
+\newblock \doi{10.3390/s24113660}.
+\newblock URL \url{https://www.mdpi.com/1424-8220/24/11/3660}.
+
+\bibitem[Starr and Lattimer(2013)]{starr2013navigation}
+J.~Starr and B.~Lattimer.
+\newblock Evaluation of navigation sensors in fire smoke environments.
+\newblock \emph{Fire Technology}, 50:\penalty0 1459--1481, 2013.
+
+\bibitem[{Texas Instruments}(2024)]{TI_SWRA831_2024}
+{Texas Instruments}.
+\newblock mmwave radar sensing and sensor fusion in humanoid robots.
+\newblock Technical Report SWRA831, Texas Instruments, December 2024.
+\newblock URL \url{https://www.ti.com/lit/swra831}.
+
+\bibitem[{Texas Instruments}(2024, % Year of access, as publication/update year is unknown month = {December}, % Month of access note = {Accessed: December 17, 2024. The URL points to the 'LATEST' version of the resource. Node ID: A__AJET5CIJQsEc-rTJGWCgcw__radar\_toolbox\_\_1AslXXD\_\_LATEST}, url = {https://dev.ti.com/tirex/explore/node?node=A__AJET5CIJQsEc-rTJGWCgcw__radar_toolbox__1AslXXD__LATEST})]{TI_RadarToolbox_Latest}
+{Texas Instruments}.
+\newblock Radar toolbox (ti resource explorer).
+\newblock 2024, % Year of access, as publication/update year is unknown month = {December}, % Month of access note = {Accessed: December 17, 2024. The URL points to the 'LATEST' version of the resource. Node ID: A__AJET5CIJQsEc-rTJGWCgcw__radar\_toolbox\_\_1AslXXD\_\_LATEST}, url = {https://dev.ti.com/tirex/explore/node?node=A__AJET5CIJQsEc-rTJGWCgcw__radar_toolbox__1AslXXD__LATEST}.
+
+\bibitem[{Tomsk State University}(2025)]{tusur_radar_sensors}
+{Tomsk State University}.
+\newblock Радиолокационные датчики для автономных роботизированных транспортных средств.
+\newblock \url{https://tusur.ru/ru/nauka-i-innovatsii/innovatsionnaya-deyatelnost/katalog-razrabotok-tusura/radiolokatsionnye-datchiki-dlya-avtonomnyh-robotizirovannyh-transportnyh-sredstv}, 2025.
+\newblock Accessed: 2025-01-07.
+
+\bibitem[Yang et~al.(2024)Yang, Rigall, Fan, and Dong]{PointLightYang}
+Yang Yang, Eric Rigall, Hao Fan, and Junyu Dong.
+\newblock Point light measurement and calibration for photometric stereo.
+\newblock \emph{IEEE Transactions on Instrumentation and Measurement}, 73:\penalty0 1--11, 2024.
+\newblock \doi{10.1109/TIM.2023.3336457}.
+
+\bibitem[Zeng et~al.(2024)Zeng, Dang, Li, Huang, and Liang]{10461097}
+Zhiyuan Zeng, Xiangwei Dang, Yanlei Li, Yan Huang, and Xingdong Liang.
+\newblock A mmwave radar slam method in subterranean tunnel for low visibility and degradation.
+\newblock \emph{IEEE Robotics and Automation Letters}, 9\penalty0 (5):\penalty0 4281--4288, 2024.
+\newblock \doi{10.1109/LRA.2024.3374191}.
+
+\end{thebibliography}

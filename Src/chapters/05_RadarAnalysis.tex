@@ -1,0 +1,30 @@
+% Conclusion Chapter
+\subsection{Rationale for the selection of Radar }
+Several frequency bands within the mmWave spectrum are utilized for radar applications, each offering distinct characteristics relevant to robotics:
+
+\paragraph{24 GHz Band:} This band is often associated with lower system costs. However, it typically provides less bandwidth (e.g., around 250 MHz, though wider bandwidths up to 1 GHz or more are possible in some regions/applications) compared to higher frequency bands. This limited bandwidth restricts the achievable range resolution and accuracy.7 Despite this, 24 GHz radars are employed for applications like presence detection and in some older or lower-cost automotive systems.
+
+\paragraph{60 GHz Band:} The 60 GHz band offers wider bandwidths, with some systems utilizing up to 7 GHz.7 This wider bandwidth translates to a degree of precision and range resolution, making it applicable for short-range sensing applications where detailed environmental perception is needed. Such applications include gesture recognition, vital signs monitoring, and, increasingly, robotic perception for tasks like detailed mapping and obstacle avoidance in cluttered spaces.7 A notable characteristic of the 60 GHz band is its susceptibility to higher atmospheric absorption, primarily due to oxygen molecules.13 While this can limit the maximum operational range, it also serves to reduce interference between nearby 60 GHz radar systems, which can be a feature in environments with multiple robots or sensors.
+
+\paragraph{77-81 GHz Band (often referred to as 77 GHz or 76-81 GHz):} This band has become the standard for automotive radar, underpinning Advanced Driver-Assistance Systems (ADAS) and autonomous driving functionalities. Its widespread adoption is driven by the availability of large bandwidths (e.g., 4 GHz or more 7), which enable a degree of resolution and accuracy for longer-range object detection and tracking.2 The performance characteristics of this band make it applicable for robots requiring long-range perception.
+
+
+\subsection{Features of radar signals}
+
+% Сырой сигнал FMCW-радара проходит сложную цепочку обработки, прежде чем превратиться в понятные роботам сведения об окружающей среде. Низкоуровневая обработка (DSP): на борту радара выполняется микширование отражённого сигнала с эталонным, оцифровка и вычисление диапазонной FFT для получения спектра отражений по дальности Этот спектр часто оформляется как range-Doppler матрица – двумерное представление, где одна ось – дальность, другая – доплеровская скорость. Далее применяется алгоритм CFAR (Constant False Alarm Rate) – адаптивная пороговая фильтрация, выделяющая пики над шумом на спектральной матрице Смысл CFAR в том, чтобы автоматически подстраивать порог детектирования под уровень шума в локальном окне спектра, обеспечивая фиксированную вероятность ложной тревоги. Различают несколько видов CFAR (с усреднением по окружению, порядковой статистикой и др.), но суть одна: сравнивать каждый резонансный сигнал с локальным фоном и отсекать шумовые всплески
+
+
+\subsubsection{FMCW features in radar systems}
+\subsubsection{Pulse compression}
+\subsubsection{Frequency modulation}
+\subsubsection{Pulse repetition frequency}
+\subsubsection{Bandwidth}
+\subsubsection{Resolution}
+\subsubsection{Range}
+
+
+\subsection{Radar connection diagram}
+
+
+\subsection{Comparison of Radar System Parameters}
+
