@@ -33,7 +33,7 @@
 
 
 % настройка ссылок и метаданных документа
-\hypersetup{unicode=true,colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=cyan,
+\hypersetup{unicode=true,colorlinks=true,linkcolor=black,citecolor=black,filecolor=magenta,urlcolor=gray,
 	pdftitle={\docname},
 	pdfauthor={\studentname},
 	pdfsubject={\subject},
@@ -43,11 +43,11 @@
 }
 
 % настройка подсветки кода и окружения для листингов
-\usemintedstyle{vs}
+\usemintedstyle{friendly}
 \newenvironment{code}{\captionsetup{type=listing}}{}
 
 
-% оформления подписи рисунка
+% оформления подписи рисункаminte
 \captionsetup[figure]{labelsep = period}
 
 % подпись таблицы
@@ -145,6 +145,12 @@
 \renewcommand{\thesection}{\arabic{section}{}}
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.{}}
 \renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.{}}
+
+% Удаление точек в номерах
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
 
 \usepackage{xstring}
 \def\FixCaptionLabel#1{%
@@ -258,7 +264,7 @@
 [1]{\setlength{\leftmargin}{\bibhang}\setlength{\itemindent}{-\parindent}%
 	\setlength{\itemsep}{\bibsep}\setlength{\parsep}{\z@}}
 \makeatother
-% \bibliographystyle{agsm}
+ \bibliographystyle{agsm}
 
 % Создание рамки и заднего фона для листингов
 \BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
@@ -289,3 +295,31 @@
 \renewenvironment{description}[0]{\begin{compactdesc}}{\end{compactdesc}}
 
 \setcitestyle{aysep={,}}
+
+
+% установка верхнего колонтитула
+\fancyhead[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	% убрать разделительную линию 
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhead[C]{\thepage}
+}
+
+
+\AtBeginEnvironment{document}{\justifying}
+\renewcommand{\raggedright}{}
+
+
+
+\definecolor{myblue}{RGB}{0,112,192}
+\definecolor{myred}{RGB}{255,199,206}
+
+% \usepackage{totcount}
+% \newtotcounter{citenum}
+% \def\oldcite{}
+% \let\oldcite=\bibcite
+% \def\bibcite{\stepcounter{citenum}\oldcite}

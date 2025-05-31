@@ -1,4 +1,56 @@
-% Utilization for Robot Motion Planning Chapter
-\subsection{Utilization for Robot Motion Planning}
+This master's thesis presents a study on the potential of utilizing millimeter-wave (mmWave) radar to enhance the motion planning capabilities of mobile robots operating in dynamic indoor environments. 
 
-% иллиметровые радары уверенно занимают место важного сенсора для мобильных роботов. Они не заменяют полностью камеры или лидары, но значительно расширяют диапазон условий, в которых робот может надёжно воспринимать мир. Текущие исследования сфокусированы на улучшении алгоритмов SLAM, распознавания и слияния данных, чтобы нивелировать ограничения радаров (шум, низкое разрешение) и использовать их сильные стороны (всепогодность, доплер).
+\noindent
+As part of this research, the following key objectives were achieved:
+\begin{itemize}
+    \item The relevance and potential of mmWave radar in mobile robotics were analyzed, highlighting its advantages over traditional sensors in challenging conditions.
+    \item Selected the Infineon, BGT60TR13C mmWave radar and seamlessly integrated it with a mobile-robot platform, establishing a full data-acquisition and processing pipeline within the ROS\,2 framework.
+    \item A set of signal processing algorithms has been developed and implemented: Processing of radiation signals
+    \item Developed a Python-based signal-processing toolbox implementing FFT for range/velocity estimation, MTI for static-clutter suppression, and DBF for direction-of-arrival reconstruction.
+    \item Performed controlled experiments that confirmed the radar’s ability to detect objects made of various materials and to estimate their motion parameters using the proposed algorithms.
+    \item Demonstrated Doppler-based velocity estimation for low-reflective targets such as small mobile robots, humans, and biological objects.
+    \item Verified, through experiments, reliable detection of floor and side-wall reflections—including columns and walls—with a range error below 10 cm at 3 m, while also distinguishing and tracking moving objects.
+    \item Integrated the resulting perception layer with the robot’s motion-planning stack, enabling real-time path corrections in response to both static and dynamic obstacles.
+\end{itemize}
+
+The research has confirmed the initial hypothesis that a single millimeter-wave radar is capable of providing sufficient data to distinguish between static and dynamic obstacles, despite its lower angular resolution compared to LiDAR. When combined with appropriate signal processing techniques, radar data can be used to construct an representation of the environment suitable for motion planning. Experimental results demonstrated that the robot can detect various types of obstacles, including other robots and human operators. This confirms the practical value and applicability of the approach developed presented in this master’s thesis.
+
+\noindent
+Answers to research questions:
+\begin{enumerate}
+    \item \textbf{Is it possible to adapt the trajectory of a mobile robot based on data from a compact mmWave radar upon detecting moving objects in indoor environments?}
+
+    The data obtained from compact mmWave radars can be used to detect moving objects, allowing the robot. These radars provide continuous feedback on motion.
+    \item \textbf{Are compact mmWave radars (24--60~GHz) effective in detecting and identifying biological objects, such as humans, under typical indoor conditions?}
+
+    Biological objects, like humans, can be detected by mmWave radars due to their reflective properties and movement patterns. In many cases, the radar returns from living beings are stronger than from surrounding inanimate objects, even in closed or obstructed environments.
+
+    \item \textbf{Does the presence of low-reflectivity objects (textile or soft furniture) affect the robot’s ability to detect them and adjust its trajectory accordingly?}
+
+    Objects made from materials with low radar reflectivity, such as fabric or foam, often fail to produce a strong radar return. As a result, the radar may not recognize them as obstacles, which can lead to collisions unless additional sensors or compensation strategies are used.
+\end{enumerate}
+
+\noindent
+Not all the hypotheses put forward have been confirmed:
+\begin{enumerate}
+    \item A single mmWave radar transmission-reception cycle is assumed to be sufficient to detect an object and estimate its velocity for motion planning.
+
+    A single radar chirp is capable of determining the distance to an object, but it lacks sufficient Doppler information to estimate speed. Motion estimation requires multiple chirps to measure frequency shifts caused by object movement.
+
+    \item Despite limited angular resolution, variations in signal amplitude and Doppler spread are assumed to allow classification of the motion state (static vs.\ moving) of nearby obstacles.
+
+    Even though compact mmWave radars have worse angular resolution, they can differentiate between stationary and moving targets by analyzing how the signal amplitude varies over time and how Doppler frequency components are distributed. This makes them some kind of tools for motion state classification in dynamic environments.
+\end{enumerate}
+
+
+Research results highlight the potential of low-cost millimeter wave radar as a valuable sensor for mobile robots, especially in environments where traditional optical sensors may be ineffective. The developed system lays the preparatory work for future research on more advanced sensor fusion techniques, multi-radar configurations to enhance spatial awareness, and machine learning methods to improve object classification and behavior prediction using radar data.
+The results of the research can be used to:
+\begin{itemize}
+    \item Improving the angular resolution through advanced signal processing techniques or the use of MIMO radar configurations.
+    \item Integrating radar data with other sensor modalities (cameras) for a more comprehensive environmental understanding.
+    \item Developing more sophisticated tracking and prediction algorithms to better handle complex multi-object scenarios.
+    \item Extending the system's capabilities to operate in more diverse and unstructured environments, including outdoor settings.
+    \item Investigating the use of deep learning for direct end-to-end learning of navigation policies from raw radar data.
+    
+\end{itemize}
+
