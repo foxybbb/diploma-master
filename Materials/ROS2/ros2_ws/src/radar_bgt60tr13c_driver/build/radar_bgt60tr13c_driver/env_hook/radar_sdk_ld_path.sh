@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+export LD_LIBRARY_PATH="$AMENT_CURRENT_PREFIX/lib:$LD_LIBRARY_PATH"

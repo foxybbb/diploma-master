@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../bin/lib/libmuFFT-sse.a CMakeFiles/muFFT-sse.dir/x86/kernel.sse.c.o
+/usr/bin/ranlib ../../../bin/lib/libmuFFT-sse.a

@@ -1,0 +1,14 @@
+# ninja log v5
+2	212	1748375123574717196	CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/MetricsFmcw.cpp.o	2f6f56597def0df3
+3	192	1748375123554718253	CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceConfig.cpp.o	9a5613139c909719
+1	134	1748375123496721316	CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Error.c.o	7473b899b17450bd
+2	217	1748375123578716985	CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Matrix.c.o	807d3e1315fed99f
+2	209	1748375123570717407	CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/Metrics.cpp.o	a58d41b9f620fa55
+0	112	1748375123468722795	CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Cube.c.o	75892f10416ebd03
+1	75	1748375143258674503	libsdk_base.so	97662b51cb4234b7
+2	110	1748375123470722690	CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwTypes.c.o	d8a76baa808aef75
+2	2885	1748380545584037039	CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o	ec3c429c6b4f463c
+2	219	1748375123581716827	CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Vector.c.o	e937de5ded73d8f4
+1	109	1748375123469722743	CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Log.c.o	59d8c6f01e8dfde7
+1	394	1748380633850811037	build.ninja	cb3ae64e0c666d12
+1	381	1748380633850811037	build.ninja	cb3ae64e0c666d12

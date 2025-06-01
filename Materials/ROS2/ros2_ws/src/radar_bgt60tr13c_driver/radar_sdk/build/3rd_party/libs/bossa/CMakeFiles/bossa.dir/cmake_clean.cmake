@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "../../../bin/.debug/libbossa.pdb"
+  "../../../bin/lib/libbossa.a"
+  "CMakeFiles/bossa.dir/Applet.cpp.o"
+  "CMakeFiles/bossa.dir/Applet.cpp.o.d"
+  "CMakeFiles/bossa.dir/D2xNvmFlash.cpp.o"
+  "CMakeFiles/bossa.dir/D2xNvmFlash.cpp.o.d"
+  "CMakeFiles/bossa.dir/D5xNvmFlash.cpp.o"
+  "CMakeFiles/bossa.dir/D5xNvmFlash.cpp.o.d"
+  "CMakeFiles/bossa.dir/Device.cpp.o"
+  "CMakeFiles/bossa.dir/Device.cpp.o.d"
+  "CMakeFiles/bossa.dir/EefcFlash.cpp.o"
+  "CMakeFiles/bossa.dir/EefcFlash.cpp.o.d"
+  "CMakeFiles/bossa.dir/EfcFlash.cpp.o"
+  "CMakeFiles/bossa.dir/EfcFlash.cpp.o.d"
+  "CMakeFiles/bossa.dir/Flash.cpp.o"
+  "CMakeFiles/bossa.dir/Flash.cpp.o.d"
+  "CMakeFiles/bossa.dir/Flasher.cpp.o"
+  "CMakeFiles/bossa.dir/Flasher.cpp.o.d"
+  "CMakeFiles/bossa.dir/LinuxPortFactory.cpp.o"
+  "CMakeFiles/bossa.dir/LinuxPortFactory.cpp.o.d"
+  "CMakeFiles/bossa.dir/OSXPortFactory.cpp.o"
+  "CMakeFiles/bossa.dir/OSXPortFactory.cpp.o.d"
+  "CMakeFiles/bossa.dir/PosixSerialPort.cpp.o"
+  "CMakeFiles/bossa.dir/PosixSerialPort.cpp.o.d"
+  "CMakeFiles/bossa.dir/Samba.cpp.o"
+  "CMakeFiles/bossa.dir/Samba.cpp.o.d"
+  "CMakeFiles/bossa.dir/WinPortFactory.cpp.o"
+  "CMakeFiles/bossa.dir/WinPortFactory.cpp.o.d"
+  "CMakeFiles/bossa.dir/WinSerialPort.cpp.o"
+  "CMakeFiles/bossa.dir/WinSerialPort.cpp.o.d"
+  "CMakeFiles/bossa.dir/WordCopyApplet.cpp.o"
+  "CMakeFiles/bossa.dir/WordCopyApplet.cpp.o.d"
+  "CMakeFiles/bossa.dir/WordCopyArm.cpp.o"
+  "CMakeFiles/bossa.dir/WordCopyArm.cpp.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/bossa.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

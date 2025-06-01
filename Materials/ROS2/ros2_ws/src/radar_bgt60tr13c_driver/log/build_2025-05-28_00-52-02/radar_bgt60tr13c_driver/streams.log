@@ -1,0 +1,75 @@
+[0.015s] Invoking command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/install/radar_bgt60tr13c_driver
+[0.086s] -- The C compiler identification is GNU 11.4.0
+[0.146s] -- The CXX compiler identification is GNU 11.4.0
+[0.156s] -- Detecting C compiler ABI info
+[0.251s] -- Detecting C compiler ABI info - done
+[0.255s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.255s] -- Detecting C compile features
+[0.256s] -- Detecting C compile features - done
+[0.257s] -- Detecting CXX compiler ABI info
+[0.361s] -- Detecting CXX compiler ABI info - done
+[0.365s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.366s] -- Detecting CXX compile features
+[0.366s] -- Detecting CXX compile features - done
+[0.369s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.500s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.585s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.629s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.634s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.641s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.651s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.664s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.701s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.704s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.848s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.876s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.921s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.932s] -- Looking for pthread.h
+[1.029s] -- Looking for pthread.h - found
+[1.030s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.127s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.128s] -- Found Threads: TRUE  
+[1.164s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.229s] -- Configuring done
+[1.238s] -- Generating done
+[1.241s] -- Build files have been written to: /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver
+[1.248s] Invoked command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/install/radar_bgt60tr13c_driver
+[1.250s] Invoking command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver -- -j16 -l16
+[1.332s] [ 50%] [32mBuilding CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[0m
+[4.185s] [100%] [32m[1mLinking CXX executable radar_publisher_node[0m
+[4.281s] /usr/bin/ld: warning: liblib_smartar.so, needed by ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so, not found (try using -rpath or -rpath-link)
+[4.323s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_adc_config(unsigned char, Infineon::Smartar::Adc_Config&) const'
+[4.323s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_sys_clock() const'
+[4.323s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::set_fifo_threshold(unsigned short)'
+[4.324s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_rx_config(unsigned char, unsigned char, Infineon::Smartar::Rx_Config&) const'
+[4.325s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Device_Traits::get_device_type(unsigned int)'
+[4.326s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::clear_fifo_threshold_interrupt()'
+[4.327s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `vtable for Infineon::Smartar::DummyPort'
+[4.327s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_register_map()'
+[4.328s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::Communication(std::unique_ptr<IPort, std::default_delete<IPort> >)'
+[4.328s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Value_Conversion::Scaled_Timer::get_clock_cycles() const'
+[4.328s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::Configuration(Infineon::Smartar::Device_Type, double, bool)'
+[4.328s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::set_sequence(unsigned char, Infineon::Smartar::Sequence_Config const&)'
+[4.329s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::reset(Infineon::Smartar::ResetType)'
+[4.329s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_tx_config(unsigned char, unsigned char, Infineon::Smartar::Tx_Config&) const'
+[4.329s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_ramp_config(unsigned char, Infineon::Smartar::Ramp_Config&) const'
+[4.330s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::read_hw_id() const'
+[4.330s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::set_tx_config(unsigned char, unsigned char, Infineon::Smartar::Tx_Config const&)'
+[4.330s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Device_Traits::get(Infineon::Smartar::Device_Type)'
+[4.331s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::set_adc_config(unsigned char, Infineon::Smartar::Adc_Config const&)'
+[4.331s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::write_sequence_trigger(unsigned char)'
+[4.331s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::read_configuration(std::map<unsigned short, unsigned int, std::less<unsigned short>, std::allocator<std::pair<unsigned short const, unsigned int> > >&)'
+[4.331s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::set_ramp_config(unsigned char, Infineon::Smartar::Ramp_Config const&)'
+[4.332s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::Configuration(Infineon::Smartar::Configuration&)'
+[4.332s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_ramp_duration(unsigned char)'
+[4.332s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::get_sequence(unsigned char, Infineon::Smartar::Sequence_Config&) const'
+[4.333s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Value_Conversion::Scaled_Timer::Scaled_Timer(unsigned int, unsigned int, unsigned int, bool)'
+[4.333s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Internal::StrataPort::StrataPort(BoardInstance*)'
+[4.333s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Configuration::set_rx_config(unsigned char, unsigned char, Infineon::Smartar::Rx_Config const&)'
+[4.333s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::write_configuration(std::map<unsigned short, unsigned int, std::less<unsigned short>, std::allocator<std::pair<unsigned short const, unsigned int> > >&)'
+[4.334s] /usr/bin/ld: ../../radar_sdk/libs/linux_x64/libsdk_fmcw.so: undefined reference to `Infineon::Smartar::Communication::wait_for_sequence_finished(unsigned char, unsigned int)'
+[4.340s] collect2: error: ld returned 1 exit status
+[4.342s] gmake[2]: *** [CMakeFiles/radar_publisher_node.dir/build.make:182: radar_publisher_node] Error 1
+[4.343s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/radar_publisher_node.dir/all] Error 2
+[4.343s] gmake: *** [Makefile:146: all] Error 2
+[4.345s] Invoked command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver -- -j16 -l16

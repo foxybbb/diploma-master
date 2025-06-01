@@ -1,0 +1,32 @@
+[100%] Built target radar_publisher_node
+-- Install configuration: ""
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/radar_bgt60tr13c_driver/radar_publisher_node
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/radar_bgt60tr13c_driver/radar_visualizer.py
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_base.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_algo.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libstrata_shared.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_avian.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/liblib_avian.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_fmcw.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_radar.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libradar_sdk.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_radar_device_common.so
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/launch
+-- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/launch/radar_visualizer.launch.py
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/library_path.dsv
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/library_path.dsv
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/ament_index/resource_index/package_run_dependencies/radar_bgt60tr13c_driver
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/ament_index/resource_index/parent_prefix_path/radar_bgt60tr13c_driver
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/path.sh
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/path.dsv
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.bash
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.sh
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.zsh
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.dsv
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/package.dsv
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/ament_index/resource_index/packages/radar_bgt60tr13c_driver
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/cmake/radar_bgt60tr13c_driverConfig.cmake
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/cmake/radar_bgt60tr13c_driverConfig-version.cmake
+-- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/package.xml

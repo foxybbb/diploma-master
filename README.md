@@ -1,91 +1,85 @@
 # Master's Thesis in LaTeX
 
-This repository contains a LaTeX template for a master's thesis, formatted according to the requirements of the Transport and Telecommunications Institute.
+> **Template for Transport and Telecommunications Institute (TSI) master’s theses.**
 
-## 📁 Project Structure
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/foxybbb/diploma-master.git
+cd diploma-master
+
+# Build the thesis (PDF will appear in build/)
+make
+
+# Remove auxiliary files, keep the PDF
+make clean
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 .
-├── .devcontainer/     # Development container configuration
-├── .git/             # Git repository data
-├── .vscode/          # VS Code settings
-├── Src/              # Source files
-│   ├── extra/        # Additional resources
-│   ├── images/       # Image assets
-│   ├── settings/     # LaTeX configuration files
-│   └── templates/    # Document templates
-└── main.tex          # Main document file
+├── Dockerfile       # Reproducible TeX Live toolchain
+├── Makefile         # Build and clean targets
+├── fonts/           # PT Sans & PT Mono used in the template
+├── Materials/       # Source code, datasets and plots for experiments
+│   ├── Code/            
+│   ├── Experiments/     
+│   ├── ROS2/            
+│   └── SDK/             
+├── Src/             # LaTeX sources
+│   ├── chapters/        # One file per chapter
+│   ├── images/          # Figures referenced in the thesis
+│   ├── settings/        # Packages & project‑wide macros
+│   ├── templates/       # Title, TOC & bibliography pages
+│   ├── config.tex       # Global document options
+│   ├── content.tex      # Includes the chapter files
+│   └── refs.bib         # BibTeX database
+├── .devcontainer/   # VS Code development container settings
+├── .vscode/         # Editor tasks & LaTeX Workshop config
+└── main.tex         # Entry point (inputs config.tex & content.tex)
 ```
 
-## 🛠️ Building the Project
+### Directory overview
 
-### Prerequisites
-- LaTeX distribution (TeX Live or MiKTeX)
-- Make utility
-- Git
+| Path                     | What it contains                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------- |
+| `Dockerfile`             | Minimal image that installs TeX Live — ensures identical builds across platforms.     |
+| `Makefile`               | Default target `make` compiles the thesis; `make clean` deletes auxiliary files.      |
+| `fonts/`                 | OpenType fonts embedded in the final PDF to meet TSI style rules.                     |
+| `Materials/Code/`        | Python/C++ scripts for LiDAR and radar data collection and processing.                |
+| `Materials/Experiments/` | Raw CSV/binary captures, plotting scripts and resulting images.                       |
+| `Materials/ROS2/`        | ROS2 nodes used during live sensor fusion tests.                                      |
+| `Src/chapters/`          | `01_Introduction.tex`, `02_ResearchBackground.tex`, … — each chapter in its own file. |
+| `Src/settings/`          | `packages.tex` (package list) and `preferences.tex` (custom macros & colours).        |
+| `Src/templates/`         | Static pages: `titlepage.tex`, `tocpage.tex`, `bibpage.tex`.                          |
+| `main.tex`               | Loads `config.tex`, then the actual content, then the template pages.                 |
 
-### Compilation
-To compile the project using Makefile:
-```bash
-git clone https://github.com/foxybbb/diploma-master.git
-cd diploma-master
-make
-```
-
-### Cleaning Build Files
-To clean build files (except PDF):
-```bash
-make clean
-```
-
-## 📝 Document Structure
-
-The thesis is organized into several sections:
-- Introduction
-- Theoretical Background
-- Research Methodology
-- Results and Discussion
-- Conclusion
-- References
-- Appendices
-
-## 🔧 Configuration
-
-The project uses several LaTeX packages and configurations:
-- `fontspec` for font management
-- `natbib` for bibliography
-- `hyperref` for hyperlinks
-- `graphicx` for image handling
-- And more...
+---
 
 ## 📚 Bibliography
 
-References are managed using BibTeX with the `plainnat` style. The bibliography file is located at `Src/refs.bib`.
+BibTeX entries reside in `Src/refs.bib` and are formatted with the `plainnat` style.
 
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Released under the **MIT License**. See `LICENSE` for details.
 
-## 🙏 Acknowledgments
+---
 
-Special thanks to all contributors and the LaTeX community for their support and resources.
+## 🤝 Contributing
 
-## Работа с LaTeX
+Issues and pull requests are welcome — feel free to improve the template or report problems.
 
-Пример компиляции проекта с помощью Makefile:
-```shell
-git clone https://github.com/foxybbb/diploma-master.git
-cd diploma-master
-make
-```
+---
 
-Пример очистки сборочных файлов после компиляции (кроме PDF):
-```shell
-make clean
-```
+## 🙏 Acknowledgements
 
-## Благодарности
+Thanks to the LaTeX community and previous TSI graduates whose work inspired this template.

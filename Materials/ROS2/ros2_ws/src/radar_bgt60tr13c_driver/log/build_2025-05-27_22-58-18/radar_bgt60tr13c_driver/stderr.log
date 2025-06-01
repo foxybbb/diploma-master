@@ -1,0 +1,14 @@
+[0mCMake Error: File /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/env_hook/radar_sdk_ld_path.sh.in does not exist.[0m
+[31mCMake Error at CMakeLists.txt:60 (configure_file):
+  configure_file Problem configuring file
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/assert_file_exists.cmake:20 (message):
+  ament_environment_hooks() the passed hook file
+  '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/env_hook/radar_sdk_ld_path.sh'
+  does not exist
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:35 (assert_file_exists)
+  CMakeLists.txt:67 (ament_environment_hooks)
+
+[0m

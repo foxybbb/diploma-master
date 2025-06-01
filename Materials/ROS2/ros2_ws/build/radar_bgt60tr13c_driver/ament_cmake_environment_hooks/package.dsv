@@ -1,0 +1,4 @@
+source;share/radar_bgt60tr13c_driver/local_setup.bash
+source;share/radar_bgt60tr13c_driver/local_setup.dsv
+source;share/radar_bgt60tr13c_driver/local_setup.sh
+source;share/radar_bgt60tr13c_driver/local_setup.zsh

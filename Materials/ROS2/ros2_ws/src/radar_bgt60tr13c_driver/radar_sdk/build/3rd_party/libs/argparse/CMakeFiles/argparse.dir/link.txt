@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../bin/lib/libargparse.a CMakeFiles/argparse.dir/argparse.c.o
+/usr/bin/ranlib ../../../bin/lib/libargparse.a

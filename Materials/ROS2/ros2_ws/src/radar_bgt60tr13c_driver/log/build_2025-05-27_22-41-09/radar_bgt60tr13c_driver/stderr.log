@@ -1,0 +1,5 @@
+[31mCMake Error at bgt_sdk/external/strata/library/CMakeLists.txt:2 (strata_include):
+  Unknown CMake command "strata_include".
+
+[0m
+ninja: error: rebuilding 'build.ninja': subcommand failed

@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/assert_file_exists.cmake:20 (message):
+  ament_environment_hooks() the passed hook file
+  'share/radar_bgt60tr13c_driver/radar_sdk_ld_path.sh' does not exist
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:35 (assert_file_exists)
+  CMakeLists.txt:154 (ament_environment_hooks)
+
+[0m
+ninja: error: rebuilding 'build.ninja': subcommand failed

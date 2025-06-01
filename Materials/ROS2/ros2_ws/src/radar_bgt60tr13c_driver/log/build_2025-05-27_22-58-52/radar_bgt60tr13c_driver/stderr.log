@@ -1,0 +1,1 @@
+ninja: error: '../../bgt_sdk/build/sdk/c/ifxBase/libsdk_base.so', needed by 'radar_publisher_node', missing and no known rule to make it

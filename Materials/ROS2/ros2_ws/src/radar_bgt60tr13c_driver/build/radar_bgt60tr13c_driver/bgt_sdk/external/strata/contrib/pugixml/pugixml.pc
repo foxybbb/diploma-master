@@ -1,0 +1,11 @@
+prefix=/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/install/radar_bgt60tr13c_driver
+exec_prefix=${prefix}
+includedir=/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/install/radar_bgt60tr13c_driver/include
+libdir=/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/install/radar_bgt60tr13c_driver/lib
+
+Name: pugixml
+Description: Light-weight, simple and fast XML parser for C++ with XPath support.
+URL: https://pugixml.org/
+Version: 1.13
+Cflags: -I${includedir}
+Libs: -L${libdir} -lpugixml

@@ -1,0 +1,36 @@
+[33mCMake Warning at CMakeLists.txt:27 (add_executable):
+  Cannot generate a safe runtime search path for target radar_publisher_node
+  because there is a cycle in the constraint graph:
+
+    dir 0 is [/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/radar_sdk/build/bin/lib]
+      dir 1 must precede it due to runtime library [libsdk_avian.so]
+    dir 1 is [/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/radar_sdk/libs/linux_x64]
+      dir 0 must precede it due to runtime library [libsdk_algo.so]
+    dir 2 is [/opt/ros/humble/lib]
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:91:5:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   91 |     [01;35m[K.[m[Krange_resolution_m = 0.05f,      // 5cm range resolution
+      |     [01;35m[K^[m[K
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:92:5:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   92 |     [01;35m[K.[m[Kmax_range_m = 5.0f,             // 5m maximum range
+      |     [01;35m[K^[m[K
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:93:5:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   93 |     [01;35m[K.[m[Kspeed_resolution_m_s = 0.2f,     // 0.2 m/s speed resolution
+      |     [01;35m[K^[m[K
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:94:5:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   94 |     [01;35m[K.[m[Kmax_speed_m_s = 2.0f,           // 2 m/s maximum speed
+      |     [01;35m[K^[m[K
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:95:5:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   95 |     [01;35m[K.[m[Kcenter_frequency_Hz = 60.5e9f    // 60.5 GHz center frequency
+      |     [01;35m[K^[m[K
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:96:1:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kifx_Fmcw_Metrics_t::max_speed_m_s[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   96 | [01;35m[K}[m[K;
+      | [01;35m[K^[m[K
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:96:1:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kifx_Fmcw_Metrics_t::center_frequency_Hz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:96:1:[m[K [01;31m[Kerror: [m[Kdesignator order for field ‘[01m[Kifx_Fmcw_Metrics_t::max_speed_m_s[m[K’ does not match declaration order in ‘[01m[Kifx_Avian_Metrics_t[m[K’ {aka ‘[01m[Kifx_Fmcw_Metrics_t[m[K’}
+gmake[2]: *** [CMakeFiles/radar_publisher_node.dir/build.make:76: CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/radar_publisher_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

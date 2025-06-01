@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:66 (file):
+  file INSTALL cannot find
+  "/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/scripts/radar_visualizer.py":
+  No such file or directory.
+
+[0m

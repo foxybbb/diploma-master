@@ -1,0 +1,163 @@
+[0.018s] Invoking command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver -- -j16 -l16
+[0.044s] 
+[0.044s] [0/1] Re-running CMake...[K
+[0.071s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.166s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.184s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.185s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.188s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.193s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.200s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.220s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.221s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.332s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.359s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.426s] -- Configuring done
+[0.434s] -- Generating done
+[0.448s] -- Build files have been written to: /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver
+[0.456s] 
+[0.456s] [0/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Cube.c.o[K
+[0.456s] [0/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Log.c.o[K
+[0.457s] [0/21] Building CXX object CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o[K
+[0.457s] [0/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Error.c.o[K
+[0.457s] [0/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o[K
+[0.457s] [0/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o[K
+[0.457s] [0/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Matrix.c.o[K
+[0.457s] [0/21] Building C object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwTypes.c.o[K
+[0.457s] [0/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o[K
+[0.458s] [0/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o[K
+[0.458s] [0/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/MetricsFmcw.cpp.o[K
+[0.458s] [0/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Vector.c.o[K
+[0.458s] [0/21] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o[K
+[0.458s] [0/21] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/Metrics.cpp.o[K
+[0.458s] [0/21] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceConfig.cpp.o[K
+[0.564s] [0/21] Building CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[K
+[0.565s] [1/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Log.c.o[K
+[0.565s] [2/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o[K
+[0.565s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o 
+[0.565s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp
+[0.565s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.565s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.hpp:41,
+[0.565s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp:36:
+[0.565s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.565s]    34 | #include <common/exception/EException.hpp>
+[0.565s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.565s] compilation terminated.
+[0.566s] 
+[0.566s] [3/21] Building C object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwTypes.c.o[K
+[0.566s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwTypes.h:49,
+[0.566s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwTypes.c:36:
+[0.566s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:65:29: warning: ISO C restricts enumerator values to range of ‘int’ [-Wpedantic]
+[0.566s]    65 | #define IFX_ERROR_APP_BASE  0x80000000
+[0.566s]       |                             ^~~~~~~~~~
+[0.566s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:201:21: note: in expansion of macro ‘IFX_ERROR_APP_BASE’
+[0.566s]   201 |     IFX_ERROR_APP = IFX_ERROR_APP_BASE /**< A generic error occurred on Application side */
+[0.566s]       |                     ^~~~~~~~~~~~~~~~~~
+[0.568s] 
+[0.568s] [4/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Cube.c.o[K
+[0.568s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Cube.c:42:
+[0.568s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:65:29: warning: ISO C restricts enumerator values to range of ‘int’ [-Wpedantic]
+[0.568s]    65 | #define IFX_ERROR_APP_BASE  0x80000000
+[0.568s]       |                             ^~~~~~~~~~
+[0.568s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:201:21: note: in expansion of macro ‘IFX_ERROR_APP_BASE’
+[0.568s]   201 |     IFX_ERROR_APP = IFX_ERROR_APP_BASE /**< A generic error occurred on Application side */
+[0.568s]       |                     ^~~~~~~~~~~~~~~~~~
+[0.572s] 
+[0.572s] [5/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o[K
+[0.572s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o 
+[0.572s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp
+[0.572s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.572s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/../DeviceFmcwBase.hpp:41,
+[0.572s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.hpp:45,
+[0.572s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp:36:
+[0.572s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.572s]    34 | #include <common/exception/EException.hpp>
+[0.572s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.572s] compilation terminated.
+[0.572s] 
+[0.572s] [6/21] Building CXX object CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o[K
+[0.572s] [31mFAILED: [0mCMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o 
+[0.572s] /usr/bin/c++ -Dsdk_radar_device_common_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o -MF CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o.d -o CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp
+[0.572s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.572s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp:36:
+[0.573s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.573s]    34 | #include <common/exception/EException.hpp>
+[0.573s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.573s] compilation terminated.
+[0.573s] 
+[0.573s] [7/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o[K
+[0.573s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o 
+[0.573s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp
+[0.573s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.573s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/../DeviceFmcwBase.hpp:41,
+[0.573s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.hpp:45,
+[0.573s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp:36:
+[0.573s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.573s]    34 | #include <common/exception/EException.hpp>
+[0.573s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.573s] compilation terminated.
+[0.587s] 
+[0.587s] [8/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o[K
+[0.587s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o 
+[0.587s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp
+[0.587s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.587s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp:31:
+[0.587s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.587s]    34 | #include <common/exception/EException.hpp>
+[0.588s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.588s] compilation terminated.
+[0.590s] 
+[0.590s] [9/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Error.c.o[K
+[0.590s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.c:41:
+[0.590s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:65:29: warning: ISO C restricts enumerator values to range of ‘int’ [-Wpedantic]
+[0.590s]    65 | #define IFX_ERROR_APP_BASE  0x80000000
+[0.590s]       |                             ^~~~~~~~~~
+[0.590s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:201:21: note: in expansion of macro ‘IFX_ERROR_APP_BASE’
+[0.590s]   201 |     IFX_ERROR_APP = IFX_ERROR_APP_BASE /**< A generic error occurred on Application side */
+[0.590s]       |                     ^~~~~~~~~~~~~~~~~~
+[0.600s] 
+[0.600s] [10/21] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o[K
+[0.600s] [31mFAILED: [0mCMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o 
+[0.600s] /usr/bin/c++ -Dsdk_avian_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o -MF CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o.d -o CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp
+[0.600s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.600s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/../DeviceFmcwBase.hpp:41,
+[0.600s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.hpp:45,
+[0.600s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp:41:
+[0.600s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.600s]    34 | #include <common/exception/EException.hpp>
+[0.601s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.601s] compilation terminated.
+[0.648s] 
+[0.665s] [11/21] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceConfig.cpp.o[K
+[0.668s] [12/21] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/Metrics.cpp.o[K
+[0.672s] [13/21] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/MetricsFmcw.cpp.o[K
+[0.672s] [14/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Matrix.c.o[K
+[0.672s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Matrix.c:39:
+[0.672s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:65:29: warning: ISO C restricts enumerator values to range of ‘int’ [-Wpedantic]
+[0.672s]    65 | #define IFX_ERROR_APP_BASE  0x80000000
+[0.673s]       |                             ^~~~~~~~~~
+[0.673s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:201:21: note: in expansion of macro ‘IFX_ERROR_APP_BASE’
+[0.673s]   201 |     IFX_ERROR_APP = IFX_ERROR_APP_BASE /**< A generic error occurred on Application side */
+[0.673s]       |                     ^~~~~~~~~~~~~~~~~~
+[0.675s] 
+[0.675s] [15/21] Building C object CMakeFiles/sdk_base.dir/bgt_sdk/sdk/c/ifxBase/Vector.c.o[K
+[0.675s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Vector.c:41:
+[0.675s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:65:29: warning: ISO C restricts enumerator values to range of ‘int’ [-Wpedantic]
+[0.675s]    65 | #define IFX_ERROR_APP_BASE  0x80000000
+[0.675s]       |                             ^~~~~~~~~~
+[0.675s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/Error.h:201:21: note: in expansion of macro ‘IFX_ERROR_APP_BASE’
+[0.675s]   201 |     IFX_ERROR_APP = IFX_ERROR_APP_BASE /**< A generic error occurred on Application side */
+[0.675s]       |                     ^~~~~~~~~~~~~~~~~~
+[2.681s] 
+[2.681s] [16/21] Building CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[K
+[2.682s] [31mFAILED: [0mCMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o 
+[2.682s] /usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/include -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -fPIE -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o -MF CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o.d -o CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp
+[2.682s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp: In member function ‘void RadarPublisherNode::process_frame_and_publish()’:
+[2.682s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:259:66: error: no match for ‘operator!=’ (operand types are ‘ifx_Cube_R_t*’ {aka ‘ifx_Mda_R_t*’} and ‘ifx_Error_e’)
+[2.682s]   259 |         if (ifx_avian_get_next_frame(device_handle_, raw_frame_) != IFX_OK || ifx_error_get()) {
+[2.682s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^~ ~~~~~~
+[2.682s]       |                                     |                               |
+[2.682s]       |                                     |                               ifx_Error_e
+[2.682s]       |                                     ifx_Cube_R_t* {aka ifx_Mda_R_t*}
+[2.682s] ninja: build stopped: subcommand failed.
+[2.684s] Invoked command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver -- -j16 -l16

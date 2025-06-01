@@ -1,0 +1,91 @@
+
+[0/2] Building CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[K
+[1/2] Building CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[K
+[31mFAILED: [0mCMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o 
+/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/include -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/build -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/geometry_msgs -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o -MF CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o.d -o CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:4:3: error: invalid preprocessing directive #Set
+    4 | # Set C++ standard to C++17
+      |   ^~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:8:3: error: invalid preprocessing directive #Enable
+    8 | # Enable warnings for our code, but not for external code
+      |   ^~~~~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:13:3: error: invalid preprocessing directive #Find
+   13 | # Find ROS 2 dependencies
+      |   ^~~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:19:3: error: invalid preprocessing directive #Configure
+   19 | # Configure SDK paths and options
+      |   ^~~~~~~~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:23:3: error: invalid preprocessing directive #Define; did you mean #define?
+   23 | # Define your ROS 2 node executable
+      |   ^~~~~~
+      |   define
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:30:19: error: stray ‘#’ in program
+   30 |     ${SDK_BUILD}  # For any generated headers
+      |                   ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:33:3: error: invalid preprocessing directive #Link
+   33 | # Link against pre-built SDK libraries
+      |   ^~~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:44:3: error: invalid preprocessing directive #Install
+   44 | # Install rules
+      |   ^~~~~~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:49:3: error: invalid preprocessing directive #Install
+   49 | # Install the pre-built SDK libraries
+      |   ^~~~~~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:58:3: error: invalid preprocessing directive #Create
+   58 | # Create environment hook for library path using DSV file
+      |   ^~~~~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:1:23: error: expected constructor, destructor, or type conversion before ‘(’ token
+    1 | cmake_minimum_required(VERSION 3.8)
+      |                       ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:20:41: error: expected unqualified-id before ‘/’ token
+   20 | set(SDK_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/bgt_sdk)
+      |                                         ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:21:26: error: expected unqualified-id before ‘/’ token
+   21 | set(SDK_BUILD ${SDK_ROOT}/build)
+      |                          ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:27:32: error: expected unqualified-id before ‘/’ token
+   27 |     ${CMAKE_CURRENT_SOURCE_DIR}/include
+      |                                ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:28:16: error: expected unqualified-id before ‘/’ token
+   28 |     ${SDK_ROOT}/sdk/c
+      |                ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:29:16: error: expected unqualified-id before ‘/’ token
+   29 |     ${SDK_ROOT}/external/lib_avian/include
+      |                ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:30:21: error: ‘For’ does not name a type
+   30 |     ${SDK_BUILD}  # For any generated headers
+      |                     ^~~
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:35:17: error: expected unqualified-id before ‘/’ token
+   35 |     ${SDK_BUILD}/sdk/c/ifxBase/libsdk_base.so
+      |                 ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:36:17: error: expected unqualified-id before ‘/’ token
+   36 |     ${SDK_BUILD}/sdk/c/ifxRadarDeviceCommon/libsdk_radar_device_common.so
+      |                 ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:37:17: error: expected unqualified-id before ‘/’ token
+   37 |     ${SDK_BUILD}/sdk/c/ifxFmcw/libsdk_fmcw.so
+      |                 ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:38:17: error: expected unqualified-id before ‘/’ token
+   38 |     ${SDK_BUILD}/sdk/c/ifxAvian/libsdk_avian.so
+      |                 ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:41:5: error: ‘$’ does not name a type
+   41 |     ${sensor_msgs_TARGETS}
+      |     ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:42:1: error: expected unqualified-id before ‘)’ token
+   42 | )
+      | ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:47:1: error: expected unqualified-id before ‘)’ token
+   47 | )
+      | ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:51:17: error: expected unqualified-id before ‘/’ token
+   51 |     ${SDK_BUILD}/sdk/c/ifxBase/libsdk_base.so
+      |                 ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:52:17: error: expected unqualified-id before ‘/’ token
+   52 |     ${SDK_BUILD}/sdk/c/ifxRadarDeviceCommon/libsdk_radar_device_common.so
+      |                 ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:53:17: error: expected unqualified-id before ‘/’ token
+   53 |     ${SDK_BUILD}/sdk/c/ifxFmcw/libsdk_fmcw.so
+      |                 ^
+/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:54:17: error: expected unqualified-id before ‘/’ token
+   54 |     ${SDK_BUILD}/sdk/c/ifxAvian/libsdk_avian.so
+      |                 ^
+ninja: build stopped: subcommand failed.

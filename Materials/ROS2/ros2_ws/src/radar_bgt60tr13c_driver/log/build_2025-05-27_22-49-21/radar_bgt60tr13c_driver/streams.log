@@ -1,0 +1,79 @@
+[0.019s] Invoking command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver -- -j16 -l16
+[0.043s] 
+[0.043s] [0/11] Building CXX object CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o[K
+[0.044s] [0/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o[K
+[0.044s] [0/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o[K
+[0.044s] [0/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o[K
+[0.044s] [0/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o[K
+[0.044s] [0/11] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o[K
+[0.104s] [0/11] Building CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[K
+[0.104s] [1/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o[K
+[0.104s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o 
+[0.105s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp
+[0.105s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.105s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcw.cpp:31:
+[0.105s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.105s]    34 | #include <common/exception/EException.hpp>
+[0.105s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.105s] compilation terminated.
+[0.108s] 
+[0.108s] [2/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o[K
+[0.109s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o 
+[0.109s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp
+[0.109s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.109s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/../DeviceFmcwBase.hpp:41,
+[0.109s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.hpp:45,
+[0.109s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwCWrapper.cpp:36:
+[0.109s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.109s]    34 | #include <common/exception/EException.hpp>
+[0.109s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.109s] compilation terminated.
+[0.110s] 
+[0.111s] [3/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o[K
+[0.111s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o 
+[0.111s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp
+[0.111s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.111s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/../DeviceFmcwBase.hpp:41,
+[0.111s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.hpp:45,
+[0.111s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.cpp:36:
+[0.111s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.111s]    34 | #include <common/exception/EException.hpp>
+[0.111s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.111s] compilation terminated.
+[0.111s] 
+[0.111s] [4/11] Building CXX object CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o[K
+[0.111s] [31mFAILED: [0mCMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o 
+[0.111s] /usr/bin/c++ -Dsdk_fmcw_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o -MF CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o.d -o CMakeFiles/sdk_fmcw.dir/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp
+[0.111s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.111s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.hpp:41,
+[0.111s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/DeviceFmcwBase.cpp:36:
+[0.111s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.111s]    34 | #include <common/exception/EException.hpp>
+[0.111s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.111s] compilation terminated.
+[0.112s] 
+[0.112s] [5/11] Building CXX object CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o[K
+[0.112s] [31mFAILED: [0mCMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o 
+[0.112s] /usr/bin/c++ -Dsdk_radar_device_common_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o -MF CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o.d -o CMakeFiles/sdk_radar_device_common.dir/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp
+[0.113s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.113s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/RadarDeviceCommon.cpp:36:
+[0.113s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.113s]    34 | #include <common/exception/EException.hpp>
+[0.113s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.113s] compilation terminated.
+[0.128s] 
+[0.128s] [6/11] Building CXX object CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o[K
+[0.128s] [31mFAILED: [0mCMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o 
+[0.128s] /usr/bin/c++ -Dsdk_avian_EXPORTS -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c -I/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/external/lib_avian/include -fPIC -Wall -Wextra -Wpedantic -std=gnu++17 -MD -MT CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o -MF CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o.d -o CMakeFiles/sdk_avian.dir/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp.o -c /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp
+[0.129s] In file included from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxRadarDeviceCommon/internal/RadarDeviceCommon.hpp:34,
+[0.129s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/../DeviceFmcwBase.hpp:41,
+[0.129s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxFmcw/avian/DeviceFmcwAvian.hpp:45,
+[0.129s]                  from /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxAvian/DeviceControl.cpp:41:
+[0.129s] /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/bgt_sdk/sdk/c/ifxBase/FunctionWrapper.hpp:34:10: fatal error: common/exception/EException.hpp: No such file or directory
+[0.129s]    34 | #include <common/exception/EException.hpp>
+[0.129s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.129s] compilation terminated.
+[3.102s] 
+[3.102s] [7/11] Building CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[K
+[3.103s] ninja: build stopped: subcommand failed.
+[3.104s] Invoked command in '/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/build/radar_bgt60tr13c_driver -- -j16 -l16

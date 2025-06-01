@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../bin/lib/libexamples_common.a CMakeFiles/examples_common.dir/common.c.o CMakeFiles/examples_common.dir/json.cpp.o CMakeFiles/examples_common.dir/time_formatter.c.o CMakeFiles/examples_common.dir/util.c.o
+/usr/bin/ranlib ../../../bin/lib/libexamples_common.a

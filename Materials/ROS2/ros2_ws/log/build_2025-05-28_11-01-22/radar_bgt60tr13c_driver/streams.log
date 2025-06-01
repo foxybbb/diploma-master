@@ -1,0 +1,88 @@
+[0.013s] Invoking command in '/home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver
+[0.089s] -- The C compiler identification is GNU 11.4.0
+[0.148s] -- The CXX compiler identification is GNU 11.4.0
+[0.156s] -- Detecting C compiler ABI info
+[0.248s] -- Detecting C compiler ABI info - done
+[0.252s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.252s] -- Detecting C compile features
+[0.252s] -- Detecting C compile features - done
+[0.254s] -- Detecting CXX compiler ABI info
+[0.356s] -- Detecting CXX compiler ABI info - done
+[0.360s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.360s] -- Detecting CXX compile features
+[0.360s] -- Detecting CXX compile features - done
+[0.363s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.483s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.564s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.604s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.609s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.619s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.628s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.641s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.678s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.681s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.822s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.848s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.892s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.901s] -- Looking for pthread.h
+[0.998s] -- Looking for pthread.h - found
+[0.998s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.091s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.092s] -- Found Threads: TRUE  
+[1.132s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.193s] -- Configuring done
+[1.199s] [33mCMake Warning at CMakeLists.txt:27 (add_executable):
+[1.199s]   Cannot generate a safe runtime search path for target radar_publisher_node
+[1.199s]   because there is a cycle in the constraint graph:
+[1.199s] 
+[1.199s]     dir 0 is [/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/radar_sdk/build/bin/lib]
+[1.199s]       dir 1 must precede it due to runtime library [libsdk_avian.so]
+[1.199s]     dir 1 is [/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/radar_sdk/libs/linux_x64]
+[1.200s]       dir 0 must precede it due to runtime library [libsdk_algo.so]
+[1.200s]     dir 2 is [/opt/ros/humble/lib]
+[1.200s] 
+[1.200s]   Some of these libraries may not be found correctly.
+[1.200s] 
+[1.200s] [0m
+[1.200s] -- Generating done
+[1.202s] -- Build files have been written to: /home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver
+[1.209s] Invoked command in '/home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver
+[1.211s] Invoking command in '/home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver -- -j16 -l16
+[1.291s] [ 50%] [32mBuilding CXX object CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o[0m
+[4.231s] [100%] [32m[1mLinking CXX executable radar_publisher_node[0m
+[4.399s] [100%] Built target radar_publisher_node
+[4.412s] Invoked command in '/home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver -- -j16 -l16
+[4.428s] Invoking command in '/home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver
+[4.437s] -- Install configuration: ""
+[4.437s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/radar_bgt60tr13c_driver/radar_publisher_node
+[4.438s] -- Set runtime path of "/home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/radar_bgt60tr13c_driver/radar_publisher_node" to ""
+[4.438s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_base.so
+[4.438s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_algo.so
+[4.439s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libstrata_shared.so
+[4.444s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_avian.so
+[4.445s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/liblib_avian.so
+[4.450s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_fmcw.so
+[4.450s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_radar.so
+[4.450s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libradar_sdk.so
+[4.450s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/libsdk_radar_device_common.so
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/launch
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/launch/radar_visualizer.launch.py
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/lib/radar_bgt60tr13c_driver/radar_visualizer.py
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/library_path.dsv
+[4.451s] -- Up-to-date: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/library_path.dsv
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/ament_index/resource_index/package_run_dependencies/radar_bgt60tr13c_driver
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/ament_index/resource_index/parent_prefix_path/radar_bgt60tr13c_driver
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/ament_prefix_path.sh
+[4.451s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/ament_prefix_path.dsv
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/path.sh
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/environment/path.dsv
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.bash
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.sh
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.zsh
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/local_setup.dsv
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/package.dsv
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/ament_index/resource_index/packages/radar_bgt60tr13c_driver
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/cmake/radar_bgt60tr13c_driverConfig.cmake
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/cmake/radar_bgt60tr13c_driverConfig-version.cmake
+[4.452s] -- Installing: /home/ubuntu/ros2_ws/install/radar_bgt60tr13c_driver/share/radar_bgt60tr13c_driver/package.xml
+[4.455s] Invoked command in '/home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/radar_bgt60tr13c_driver

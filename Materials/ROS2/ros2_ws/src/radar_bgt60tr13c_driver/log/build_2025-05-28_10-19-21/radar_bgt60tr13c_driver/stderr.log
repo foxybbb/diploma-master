@@ -1,0 +1,13 @@
+[33mCMake Warning at CMakeLists.txt:27 (add_executable):
+  Cannot generate a safe runtime search path for target radar_publisher_node
+  because there is a cycle in the constraint graph:
+
+    dir 0 is [/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/radar_sdk/build/bin/lib]
+      dir 1 must precede it due to runtime library [libsdk_avian.so]
+    dir 1 is [/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/radar_sdk/libs/linux_x64]
+      dir 0 must precede it due to runtime library [libsdk_algo.so]
+    dir 2 is [/opt/ros/humble/lib]
+
+  Some of these libraries may not be found correctly.
+
+[0m

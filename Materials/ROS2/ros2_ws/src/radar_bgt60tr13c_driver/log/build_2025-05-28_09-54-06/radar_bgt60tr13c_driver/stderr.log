@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:[m[K In member function ‘[01m[Kvoid RadarPublisherNode::publish_fft_data()[m[K’:
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:303:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct std_msgs::msg::Float32MultiArray_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kheader[m[K’
+  303 |         msg.[01;31m[Kheader[m[K.stamp = now();
+      |             [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/radar_publisher_node.dir/build.make:76: CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/radar_publisher_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

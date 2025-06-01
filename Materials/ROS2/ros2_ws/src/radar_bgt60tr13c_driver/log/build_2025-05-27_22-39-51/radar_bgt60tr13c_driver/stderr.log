@@ -1,0 +1,5 @@
+fatal: not a git repository (or any of the parent directories): .git
+[0mProcessor: x86_64[0m
+[0mEnabling x86 SIMD support.[0m
+<string>:1: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+ninja: error: '../../libs/linux_x64/libsdk_advanced_motion_sensing.so', needed by 'sdk_build/bin/BGT60LTR11AIP_advanced_motion_sensing', missing and no known rule to make it

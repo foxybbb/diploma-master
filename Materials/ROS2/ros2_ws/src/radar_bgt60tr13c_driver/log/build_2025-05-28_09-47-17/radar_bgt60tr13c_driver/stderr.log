@@ -1,0 +1,7 @@
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:[m[K In constructor ‘[01m[KRadarPublisherNode::RadarPublisherNode()[m[K’:
+[01m[K/home/ubuntu/ros2_ws/src/radar_bgt60tr13c_driver/src/radar_node.cpp:188:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct ifx_Avian_Config_t[m[K’ has no member named ‘[01m[Kframe_period_us[m[K’
+  188 |         cfg.[01;31m[Kframe_period_us[m[K = (1000000 / IFX_FRAME_RATE_HZ); // Convert Hz to microseconds
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/radar_publisher_node.dir/build.make:76: CMakeFiles/radar_publisher_node.dir/src/radar_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/radar_publisher_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
